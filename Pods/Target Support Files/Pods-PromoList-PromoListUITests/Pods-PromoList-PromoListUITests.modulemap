@@ -1,0 +1,6 @@
+framework module Pods_PromoList_PromoListUITests {
+  umbrella header "Pods-PromoList-PromoListUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
