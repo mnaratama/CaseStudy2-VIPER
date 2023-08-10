@@ -24,6 +24,11 @@
 		234369FB2A84972F008F8D53 /* PromoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234369FA2A84972F008F8D53 /* PromoListViewController.swift */; };
 		234369FD2A849748008F8D53 /* PromoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234369FC2A849748008F8D53 /* PromoListTableViewCell.swift */; };
 		234369FF2A84975E008F8D53 /* PromoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234369FE2A84975E008F8D53 /* PromoListRouter.swift */; };
+		23436A052A849F48008F8D53 /* PromoDetailModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23436A042A849F48008F8D53 /* PromoDetailModuleTests.swift */; };
+		23436A072A849F53008F8D53 /* PromoDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23436A062A849F53008F8D53 /* PromoDetailPresenterTests.swift */; };
+		23436A092A84B6B4008F8D53 /* PromoListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23436A082A84B6B4008F8D53 /* PromoListViewControllerTests.swift */; };
+		23436A0B2A84B71B008F8D53 /* PromoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23436A0A2A84B71B008F8D53 /* PromoListPresenterTests.swift */; };
+		23436A0D2A84B743008F8D53 /* PromoListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23436A0C2A84B743008F8D53 /* PromoListRouterTests.swift */; };
 		2A75C55599B8937A4939E9B8 /* Pods_PromoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A477D097768742728759084 /* Pods_PromoList.framework */; };
 		77729C34E0008225343AA288 /* Pods_PromoListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA472869C77DCC2B9E19283 /* Pods_PromoListTests.framework */; };
 		D41F1978F51A91BEE23E661C /* Pods_PromoList_PromoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9815FD872FB9F52CED0729E4 /* Pods_PromoList_PromoListUITests.framework */; };
@@ -68,6 +73,11 @@
 		234369FA2A84972F008F8D53 /* PromoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListViewController.swift; sourceTree = "<group>"; };
 		234369FC2A849748008F8D53 /* PromoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListTableViewCell.swift; sourceTree = "<group>"; };
 		234369FE2A84975E008F8D53 /* PromoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListRouter.swift; sourceTree = "<group>"; };
+		23436A042A849F48008F8D53 /* PromoDetailModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailModuleTests.swift; sourceTree = "<group>"; };
+		23436A062A849F53008F8D53 /* PromoDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailPresenterTests.swift; sourceTree = "<group>"; };
+		23436A082A84B6B4008F8D53 /* PromoListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListViewControllerTests.swift; sourceTree = "<group>"; };
+		23436A0A2A84B71B008F8D53 /* PromoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListPresenterTests.swift; sourceTree = "<group>"; };
+		23436A0C2A84B743008F8D53 /* PromoListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListRouterTests.swift; sourceTree = "<group>"; };
 		2A477D097768742728759084 /* Pods_PromoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A8999AA0FACD305651BAD3 /* Pods-PromoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoListTests.debug.xcconfig"; path = "Target Support Files/Pods-PromoListTests/Pods-PromoListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E70474D9C65DAD5BCFF99D9 /* Pods-PromoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoList.debug.xcconfig"; path = "Target Support Files/Pods-PromoList/Pods-PromoList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				234369C12A848D51008F8D53 /* PromoListTests.swift */,
+				23436A002A849D56008F8D53 /* PromoListTests */,
 			);
 			path = PromoListTests;
 			sourceTree = "<group>";
@@ -278,6 +289,42 @@
 				234369FE2A84975E008F8D53 /* PromoListRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		23436A002A849D56008F8D53 /* PromoListTests */ = {
+			isa = PBXGroup;
+			children = (
+				23436A012A849D63008F8D53 /* Module */,
+			);
+			path = PromoListTests;
+			sourceTree = "<group>";
+		};
+		23436A012A849D63008F8D53 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				23436A022A849D6C008F8D53 /* PromoDetailModuleTest */,
+				23436A032A849D74008F8D53 /* PromoListModuleTests */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		23436A022A849D6C008F8D53 /* PromoDetailModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				23436A042A849F48008F8D53 /* PromoDetailModuleTests.swift */,
+				23436A062A849F53008F8D53 /* PromoDetailPresenterTests.swift */,
+			);
+			path = PromoDetailModuleTest;
+			sourceTree = "<group>";
+		};
+		23436A032A849D74008F8D53 /* PromoListModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				23436A082A84B6B4008F8D53 /* PromoListViewControllerTests.swift */,
+				23436A0A2A84B71B008F8D53 /* PromoListPresenterTests.swift */,
+				23436A0C2A84B743008F8D53 /* PromoListRouterTests.swift */,
+			);
+			path = PromoListModuleTests;
 			sourceTree = "<group>";
 		};
 		BE33EFC4AF975CC517C73FE9 /* Frameworks */ = {
@@ -560,6 +607,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23436A0D2A84B743008F8D53 /* PromoListRouterTests.swift in Sources */,
+				23436A092A84B6B4008F8D53 /* PromoListViewControllerTests.swift in Sources */,
+				23436A0B2A84B71B008F8D53 /* PromoListPresenterTests.swift in Sources */,
+				23436A052A849F48008F8D53 /* PromoDetailModuleTests.swift in Sources */,
+				23436A072A849F53008F8D53 /* PromoDetailPresenterTests.swift in Sources */,
 				234369C22A848D51008F8D53 /* PromoListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
