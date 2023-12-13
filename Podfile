@@ -7,7 +7,7 @@ target 'PromoList' do
 
   # Pods for PromoList
   pod 'Alamofire'
-  pod 'Kingfisher'
+  pod 'Kingfisher', '7.6.1'
 
   target 'PromoListTests' do
     inherit! :search_paths
